@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0f0189;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #ffe601;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+    }
+
+    nav a {
+      color: rgb(0, 0, 0);
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      flex-grow: 1;
+      text-align: center; 
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background-color: #0f0189;
+      color: white;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      text-decoration: none; 
+    }
+
+    .navigation-buttons {
+      margin-top: 20px;
+    }
+
+    .navigation-buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 0 10px;
+      border: 2px solid #000000; 
+    }
+
+    .navigation-buttons a:hover {
+      background-color: #414045;
+      border-color: #414045; 
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Ijam</h1>
+  </header>
+
+  <main>
+    <h2>Welcome to My Personal Website</h2>
+    <p>Please use the navigation links above to explore more about me.</p>
+    <p>(Click one of the buttons below to help you learn about me)</p>
+    <div class="navigation-buttons">
+      <a href="biodata.html">Biodata</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jamfrcs/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://discord.gg/5qXMpw45yq" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+    <p>&copy; 2024 JammFrcss</p>
+  </footer>
+</body>
+</html>

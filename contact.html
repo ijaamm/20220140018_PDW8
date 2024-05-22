@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0f0189;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #ffe601;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+    }
+
+    nav a {
+      color: rgb(0, 0, 0);
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      flex-grow: 1;
+    }
+
+    h2 {
+      color: #0f0189;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #0f0189;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d0166;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background-color: #0f0189;
+      color: white;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      text-decoration: none; 
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Ijam</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="hobbies.html">Hobbies</a>
+  </nav>
+
+  <main>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jamfrcs/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://discord.gg/5qXMpw45yq" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+    <p>&copy; 2024 JammFrcss</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name && email && message) {
+        alert('Thank you, ' + name + '! Your message has been received.');
+        document.getElementById('contact-form').reset();
+      } else {
+        alert('Please fill out all fields.');
+      }
+    });
+  </script>
+</body>
+</html>
